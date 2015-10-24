@@ -1,0 +1,38 @@
+body{
+    background-color: #36465d;
+}
+
+#header{
+    width: 100%;
+    text-align: center;
+}
+
+#main{
+    width: 70%;
+    border: 3px solid black;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-topright: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    background-color: white;
+    border-radius: 15px;
+    border: transparent none;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+td{
+    border-bottom: dotted lightgray 2px;
+    padding: 10px;
+}
+
+thead.td{
+    font-weight: bold;
+}

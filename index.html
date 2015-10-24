@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Food Tracker Application</title>
+        <link rel="stylesheet" type="text/css" href="styleSheet.css"/>
+        <script src="jquery-2.1.4.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Food Tracker Application</h1>
+        </div>
+        <div id="main">
+            <h2>Main</h2>
+            <form id="myForm">
+                Food: <input type="text" id="name"/>
+                <br>
+                Description: <input type="text" id="desc"/>
+                <br>
+                Date of Purchase: <input type="text" id="date"/>
+                <br>
+                Shelf Life: <input type="text" id="life"/>
+                <br>
+                Expiration Date: <input type="text" id="exp"/>
+                <br>
+                <input type="button" value="Reset Form" onclick="add()" />
+            </form>
+
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <td>Food</td>
+                        <td>Description</td>
+                        <td>Date of Purchase</td>
+                        <td>Shelf Life</td>
+                        <td>Expiration Date</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Milk</td>
+                        <td>2%</td>
+                        <td>10/06/15</td>
+                        <td>3 Days</td>
+                        <td>10/13/15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
