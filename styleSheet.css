@@ -1,5 +1,8 @@
 body{
-    background-color: #36465d;
+    background-image: url('https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/10/106/106399/crsrxfllostehmuxwzqfkdarpcg0di40toehyl4mzmgrkmy3dpfzxttukvsmluvp-o.jpg?1399222059');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 #header{
@@ -17,12 +20,12 @@ body{
     background-color:lightgray;
     text-align: center;
     padding: 10px;
+    opacity: 0.7;
 }
 
 table{
     background-color: white;
     border-radius: 15px;
-    border: transparent none;
     margin-left: auto;
     margin-right: auto;
     word-wrap: break-word;
