@@ -1,8 +1,7 @@
 /**
  * Created by session2 on 10/20/15.
  */
-var nameBox, descBox, dateBox, lifeBox, expBox;
-
+var nameBox, descBox, dateBox, lifeBox, expBox, inputs;
 
 function add(){
     nameBox = document.getElementById('name').value;
@@ -10,14 +9,23 @@ function add(){
     dateBox = document.getElementById('date').value;
     lifeBox = document.getElementById('life').value;
     expBox = document.getElementById('exp').value;
-    updateTable();
-    clearForm();
+    inputs = [nameBox, descBox, dateBox, lifeBox, expBox];
+    if(nameBox == "" || descBox == "" || dateBox == "" || lifeBox == "" || expBox == ""){
+        /** Checks if any boxes are empty */
+        confirm("Please input a complete form.");
+    } else if (isNaN(parseInt(lifeBox)) == true){
+        /** Checks if shelf life is a number because it must be in order for the red highlighting to work properly */
+        confirm("Shelf life must be a number of days.");
+    } else {
+        updateTable();
+        clearForm();
+    }
 }
 
+/** Adds input to table */
 function updateTable() {
     var table = document.getElementById("myTable");
     var row = table.insertRow(1);
-    var inputs = [nameBox, descBox, dateBox, lifeBox, expBox];
 
     /** Adds individual cells to the row */
     for(var i = 0; i < 5; i++){
@@ -33,8 +41,4 @@ function updateTable() {
 /** Empties the form elements */
 function clearForm() {
     document.getElementById("myForm").reset();
-}
-
-function removeRow(){
-
 }
